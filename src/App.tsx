@@ -1,10 +1,13 @@
 import './App.css';
+import GradientHeader from './components/gradientHeader';
 
 const App = () => {
   return (
     <div className="content">
-      <h1>Rsbuild with React</h1>
-      <p>Start building amazing things with Rsbuild.</p>
+      <GradientHeader 
+        title="Rsbuild with React"
+        subtitle="Start building amazing things with Rsbuild."
+      />
     </div>
   );
 };
