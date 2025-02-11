@@ -6,7 +6,7 @@ interface GradientHeaderProps {
 }
 
 const GradientHeader: React.FC<GradientHeaderProps> = ({ 
-  title = "Welcome to the App", 
+  title = "Welcome to the App.  This is a test", 
   subtitle = "Start building amazing things" 
 }) => {
   return (
