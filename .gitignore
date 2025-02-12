@@ -11,3 +11,9 @@ dist/
 .vscode/*
 !.vscode/extensions.json
 .idea
+
+# Environment
+.env
+.env.local
+.env.*.local
+.zephyr/
