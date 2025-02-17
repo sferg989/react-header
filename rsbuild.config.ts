@@ -8,7 +8,9 @@ export default defineConfig({
       config.resolve ||= {};
       config.resolve.alias ||= {};
       config.resolve.alias['@util'] = 'src/util';
-      return withZephyr()(config);
+      return withZephyr({
+        authToken: process.env.ZE_SECRET_TOKEN
+      })(config);
     },
   },
   plugins: [
