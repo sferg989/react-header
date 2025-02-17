@@ -1,0 +1,7 @@
+node_modules/
+dist/
+coverage/
+build/
+.rsbuild/
+*.js.map
+*.d.ts

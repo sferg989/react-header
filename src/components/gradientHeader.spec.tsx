@@ -4,7 +4,7 @@ import GradientHeader from './gradientHeader';
 describe('GradientHeader', () => {
   it('renders with default props', () => {
     render(<GradientHeader />);
-    expect(screen.getByText('Welcome')).toBeInTheDocument();
+    expect(screen.getByText('Welcome to the App. This is a test')).toBeInTheDocument();
     expect(screen.getByText('Start building amazing things')).toBeInTheDocument();
   });
 
@@ -15,4 +15,4 @@ describe('GradientHeader', () => {
     expect(screen.getByText(title)).toBeInTheDocument();
     expect(screen.getByText(subtitle)).toBeInTheDocument();
   });
-}); 
+});

@@ -1,0 +1,59 @@
+.spaceButton {
+  background: linear-gradient(45deg, #1e2022 0%, #2d3436 100%);
+  color: #00edff;
+  border: 2px solid #00edff;
+  padding: 12px 24px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.spaceButton:hover {
+  background: linear-gradient(45deg, #2d3436 0%, #1e2022 100%);
+  transform: scale(1.05);
+  color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 237, 255, 0.6);
+}
+
+.spaceButton:active {
+  transform: scale(0.95);
+}
+
+.spaceButton::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: rotate(45deg);
+  transition: all 0.3s ease;
+}
+
+.spaceButton:hover::before {
+  transform: rotate(45deg) translateY(-100%);
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba(0, 237, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 237, 255, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(0, 237, 255, 0.3);
+  }
+}
+
+.spaceButton {
+  animation: glow 2s infinite;
+} 

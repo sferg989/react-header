@@ -1,0 +1,67 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": ["./tsconfig.eslint.json"],
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "react",
+    "react-hooks"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "react-hooks/exhaustive-deps": "off",
+    "quotes": ["error", "single", "avoid-escape"],
+    "semi": ["error", "always"],
+    "no-restricted-imports": ["error"],
+    "curly": "error",
+    "eol-last": "error",
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "no-bitwise": "error",
+    "no-dupe-args": "error",
+    "prefer-const": "error",
+    "no-empty": "error",
+    "no-var": "error",
+    "no-eval": "error",
+    "no-trailing-spaces": "error",
+    "no-fallthrough": "error",
+    "no-multiple-empty-lines": "error",
+    "max-len": ["error", 175],
+    "max-lines": ["error", 225],
+    "max-depth": ["error", 3],
+    "no-duplicate-case": "error",
+    "complexity": ["error", 10],
+    "brace-style": [
+      "error",
+      "1tbs",
+      {
+        "allowSingleLine": true
+      }
+    ],
+    "no-multi-spaces": "error",
+    "no-unreachable": "error",
+    "no-unneeded-ternary": "error",
+    "no-extra-semi": "error",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/no-unused-vars": "error",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off"
+  }
+} 

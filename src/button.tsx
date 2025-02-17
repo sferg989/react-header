@@ -1,3 +1,17 @@
+import React from 'react';
+import styles from './button.module.css';
+
 export default function Button() {
-  return <div>Provider button This is the button from the provider</div>;
+  const handleClick = () => {
+    alert('🚀 SpaceX Launch Sequence Initiated! 🛸  I will be surprised if you can find the button');
+  };
+
+  return (
+    <button
+      className={styles.spaceButton}
+      onClick={handleClick}
+    >
+      Launch Sequence
+    </button>
+  );
 }

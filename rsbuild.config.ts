@@ -4,7 +4,7 @@ import { pluginModuleFederation } from '@module-federation/rsbuild-plugin';
 import { withZephyr } from 'zephyr-webpack-plugin';
 export default defineConfig({
   tools: {
-     rspack: (config) => {
+    rspack: (config) => {
       config.resolve ||= {};
       config.resolve.alias ||= {};
       config.resolve.alias['@util'] = 'src/util';
