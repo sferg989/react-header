@@ -4,12 +4,13 @@ import { pluginModuleFederation } from '@module-federation/rsbuild-plugin';
 import { withZephyr } from 'zephyr-webpack-plugin';
 export default defineConfig({
   tools: {
+    //ts-ignore
     rspack: (config) => {
       config.resolve ||= {};
       config.resolve.alias ||= {};
       config.resolve.alias['@util'] = 'src/util';
       return withZephyr({
-        authToken: process.env.ZE_SECRET_TOKEN
+
       })(config);
     },
   },
